@@ -1,0 +1,8 @@
+@media screen and (max-width: 420px) {
+
+    .gauge-meter{
+      margin-right: 100px;
+      align-items: center;
+    scale:60%;
+    }
+    }

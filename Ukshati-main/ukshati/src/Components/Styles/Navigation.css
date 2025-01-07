@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.active {
+    border-bottom: 2px solid #22c55e; /* Green accent color */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+    

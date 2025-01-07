@@ -1,0 +1,40 @@
+h2 {
+    color: #538d22;
+    font-weight: 700;
+  }
+  
+  .info-section {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .download-btn {
+    display: flex;
+    background-color: #538d22;
+    align-content: center;
+    border: solid 1px #538d22;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+     
+  }
+  
+  .download-btn img{
+    width: 20%;
+  }
+  
+  @media (max-width:768px){
+    .btn{
+      padding: 20px;
+      margin-top: 20px;
+    }
+  
+    .app-img{
+      align-items: center;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  

@@ -1,0 +1,93 @@
+.footernav-link{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.footernav-link:hover{
+    color: green;
+    transition: 1s;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px white;
+}
+.comapanyname h6{
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.companyname p{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.contact h6{
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.facebook-icon{
+    height: 50px;
+    width: 25px;
+    color: rgba(25,61,234,1);
+    cursor: pointer;
+}
+.twitter-icon{
+    height: 50px;
+    width: 25px;
+    color: rgba(29,158,248,1);
+    cursor: pointer;
+}
+.linkedin-icon{
+    height: 50px;
+    width: 25px;
+    color: rgba(29,96,248,1);
+    cursor: pointer;
+}
+.instagram-icon{
+    height: 50px;
+    width: 25px;
+    color:#e84393;
+    cursor: pointer;
+}
+
+.android-icon{
+    height: 50px;
+    width: 25px;
+    color:#4dfe28;
+    cursor: pointer;
+}
+.youtube-icon{
+    height: 50px;
+    width: 25px;
+    color:#fe283e;
+    cursor: pointer;
+}
+.email-icon{
+    height: 50px;
+    width: 25px;
+    color:#06f635;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.loaction-icon{
+    height: 50px;
+    width: 25px;
+    color:#06f635;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.phone-icon{
+    height: 50px;
+    width: 25px;
+    color:#06f635;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.copy p{
+    color: #fe283e;
+}

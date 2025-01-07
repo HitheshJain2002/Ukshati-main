@@ -1,0 +1,32 @@
+.history-title {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    color: #016b8c;
+    padding: 20px;
+  }
+  .watering-history-container {
+    /* width: 80%; */
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .pagination {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 430px) {
+    .history-table {
+      transform: scale(0.7);
+      margin-left: -50px;
+      padding: 0px;
+      margin-top: -30px;
+    }
+  }
+  

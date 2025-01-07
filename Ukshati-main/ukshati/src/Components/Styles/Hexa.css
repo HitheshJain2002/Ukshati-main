@@ -1,0 +1,114 @@
+.HEXA-section {
+    position: relative;
+    padding: 20px;
+    /* background-color: #016b8c; */
+    z-index: 1;
+    min-height: 100vh;
+  }
+  
+  /* .HEXA-section::after,
+  .HEXA-section::before {
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  .HEXA-section::after {
+    background: #007bff;
+    top: -3rem;
+    left: -5rem;
+  }
+  
+  .HEXA-section::before {
+    background: #007bff;
+    bottom: 0rem;
+    right: 0rem;
+  } */
+  
+  .HEXA-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 30px;
+  }
+  
+  .HEXA-section-card {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border: none;
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+  }
+  
+  .HEXA-section-card-tabs .nav-link {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .nav-tabs .nav-link.disabled {
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .HEXA-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  @media screen and (max-width: 420px){
+    .HEXA-section-card{
+      width: 270px;
+    }
+  
+    .HEXA-section::after,
+  .HEXA-section::before {
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  /* .HEXA-section::after {
+    background: #007bff;
+    top: -4rem;
+    left: -8rem;
+    
+  }
+  
+  .HEXA-section::before {
+    background: #007bff;
+    bottom: 0rem;
+    right: 0rem;
+  } */
+  }
+  

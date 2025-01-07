@@ -1,0 +1,215 @@
+.Quadra-section {
+    position: relative;
+    padding: 20px;
+    /* background-color: #016b8c; */
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+  
+  /* .Quadra-section::after,
+  .Quadra-section::before {
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  .Quadra-section::after {
+    background: #007bff;
+    top: -3rem;
+    left: -5rem;
+  }
+  
+  .Quadra-section::before {
+    background: #007bff;
+    bottom: 0rem;
+    right: 0rem;
+  } */
+  
+  
+  .Quadra-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    align-items: center;
+  }
+  
+  
+  .quadra-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .nodes-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .node-button {
+    background-color: #ffff;
+    border: 0.1px solid #016b8c;
+    font-size: 18px;
+    font-weight: 600;
+    color: #016b8c;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  
+  .node-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+  .node-button.active {
+    background-color: #016b8c;
+    color: #ffff;
+    transform: scale(1.03);
+    border-color: #ffff;
+  }
+  
+  
+  .quadra-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .node-card,
+  .control-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, background-color 0.3s;
+    color: #333;
+  }
+  
+  .control-card {
+    width: 60%;
+  }
+  
+  .node-card {
+    width: 30%;
+  }
+  
+  .node-card:hover,
+  .control-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .node-title {
+    font-size: 24px;
+    color: #016b8c;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .Quadra-btn {
+    background-color: #ffff;
+    border: 0.1px solid #016b8c;
+    font-size: 18px;
+    font-weight: 600;
+    color: #016b8c;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .Quadra-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .control-card h4 {
+    margin-top: 0;
+    color: #016b8c;
+  }
+  
+  .control-card div {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .node-card,
+    .control-card {
+      width: 100%;
+    }
+  
+    
+  }
+  
+  @media screen and (max-width: 420px) {
+    .Quadra-section::after,
+    .Quadra-section::before {
+      width: 28rem;
+      height: 28rem;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      filter: blur(100px);
+    }
+  
+    /* .Quadra-section::after {
+      background: #007bff;
+      top: -4rem;
+      left: -8rem;
+    }
+  
+    .Quadra-section::before {
+      background: #007bff;
+      bottom: 0rem;
+      right: 0rem;
+    } */
+  
+    .quadra-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .node-button {
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .node-card,
+    .control-card {
+      width: 100%;
+    }
+  
+    .control-card{
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .control-card{
+      margin-top: 20px;
+    }
+  }
+  
+  

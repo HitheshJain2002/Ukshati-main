@@ -1,0 +1,74 @@
+.services-content h1 {
+    color: #87a922;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: #fafcf9;
+  }
+  
+  .services-content {
+    margin-top: 60px;
+  }
+  
+  .service-content {
+    align-items: center;
+    margin: 60px;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fafcf9;
+    backdrop-filter: blur(1rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: m;
+    justify-content: center;
+    align-items: center;
+    /* width: 300px; */
+    padding: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+  .service-card:hover,
+  .service-card.active {
+    background: linear-gradient(180deg, #c1ff9b 0%, #96e072 100%);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border: 1.5px solid #538d22;
+  }
+  
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  
+  .card-image {
+    width: 20%;
+    height: auto;
+  }
+  
+  .card-title {
+    color: #538d22;
+    font-weight: 600;
+    text-size-adjust: 0.58;
+  }
+  
+  @media (max-width: 768px) {
+    .card-image {
+      width: 50%;
+    }
+  
+    .card-title {
+      text-wrap: normal;
+      font-size: 12px;
+    }
+    .service-card {
+      height: 80px;
+    }
+  }
+  

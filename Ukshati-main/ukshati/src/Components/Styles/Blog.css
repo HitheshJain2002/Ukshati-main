@@ -1,0 +1,185 @@
+.section-article{
+    border:2px solid white;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(43,195,34,1);
+}
+.Article-arrow{
+    font-size: 40px;
+    color: rgba(43,195,34,1);
+}
+#card-blog-row-1-1{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-blog-row-1-1 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-blog-row-1-1:hover{
+  box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+
+#card-blog-row-1-2{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-blog-row-1-2 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-blog-row-1-2:hover{
+    box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#card-blog-row-2-1{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-blog-row-2-1 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-blog-row-2-1:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#card-blog-row-2-2{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-blog-row-2-2 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-blog-row-2-2:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#article-button{
+    padding:0px;
+    color: rgba(43,195,34,1);
+}
+
+/* youtube */
+
+.section-Youtube{
+    border:2px solid white;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 1%;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(43,195,34,1);
+}
+.Youtube-arrow{
+    font-size: 40px;
+    color: rgba(43,195,34,1);
+}
+#youtube-button{
+    padding:0px;
+    color: rgba(43,195,34,1);
+}
+
+#card-youtube-row-1-1{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-youtube-row-1-1 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-youtube-row-1-1:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#card-youtube-row-1-2{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-youtube-row-1-2 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-youtube-row-1-2:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#card-youtube-row-2-1{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-youtube-row-2-1 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-youtube-row-2-1:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+#card-youtube-row-2-2{
+    margin-top: 15px;
+    border-radius: 28px;
+    border: 1px solid rgba(43,195,34,1);
+}
+#card-youtube-row-2-2 img{
+    height: 100%; 
+    width: 100%;  
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 28px;
+}
+#card-youtube-row-2-2:hover{
+box-shadow: 2px 3px 10px rgba(43,195,34,1);
+  transition: 1s;
+  background-color: #d1f0c5;
+}
+
