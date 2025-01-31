@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import Layout from "../Layouts/Layout";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../Styles/Contact.css";
+
+// Replace the img imports with the actual image imports
 import img1 from "../Images/location3.jpg";
 import img2 from "../Images/email2.jpg";
 import img3 from "../Images/Phone.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Contact = () => {
   useEffect(() => {
@@ -13,11 +16,11 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-16 pt-[180px]"> {/* Added pt-[80px] to account for fixed navbar */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Map Section */}
           <div
-            className="relative rounded-lg shadow-lg border-2 border-gray-300 bg-white"
+            className="relative rounded-lg shadow-2xl border-2 border-gray-200 bg-white overflow-hidden"
             data-aos="fade-right"
           >
             <iframe
@@ -33,7 +36,7 @@ const Contact = () => {
           {/* Contact Details Section */}
           <div className="flex flex-col gap-8" data-aos="fade-left">
             {/* Location Card */}
-            <div className="flex items-start gap-4 bg-green-100 p-6 rounded-lg shadow-lg">
+            <div className="flex items-start gap-4 bg-green-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
                 src={img1}
                 alt="Location"
@@ -52,7 +55,7 @@ const Contact = () => {
             </div>
 
             {/* Email Card */}
-            <div className="flex items-start gap-4 bg-blue-100 p-6 rounded-lg shadow-lg">
+            <div className="flex items-start gap-4 bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
                 src={img2}
                 alt="Email"
@@ -67,7 +70,7 @@ const Contact = () => {
             </div>
 
             {/* Phone Card */}
-            <div className="flex items-start gap-4 bg-red-100 p-6 rounded-lg shadow-lg">
+            <div className="flex items-start gap-4 bg-red-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
                 src={img3}
                 alt="Phone"

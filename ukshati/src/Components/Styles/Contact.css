@@ -1,71 +1,21 @@
-/* .container{
-    overflow:hidden;
-    height:0;
-    padding-bottom: 30%;
-    position: relative;
-} */
-/* .container iframe{
-    border:0px;
-    height: 100%;
-    width: 100%;
-    top: 2px;
-    left: 0px;
-    right: 0px;
-    position: absolute;
-}  */
-.container-image{
-    height: 20%;
-}
-iframe{
-    border:0px;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-}
-.card-group {
-    padding: 25px;
-    width: 90%;
-    margin: auto;
+/* Contact.css */
+
+.container {
     
-}
-.card{
-    margin: 50px;
-}
-.card img{
-    height: 100px;
-    width:70%;
-    margin: auto;  
-}
-#card-contact{
-    border: 2px solid white;
-}
-#card-contact img{
-    margin: auto;
-}
-#card-title-contact-location{
-    color:rgba(43,195,34,1);
-    text-align: center;
-}
-#card-text-contact-location{
-    color:rgba(43,195,34,1);
-    text-align: center;
-    margin-top: 10px;
-}
-#card-title-contact-email{
-    color:rgba(43,195,34,1);
-    text-align: center;
-}
-#card-text-contact-email{
-    color:rgba(43,195,34,1);
-    text-align: center;
-    margin-top: 10px;
-}
-#card-title-contact-phone{
-    color:rgba(43,195,34,1);
-    text-align: center;
-}
-#card-text-contact-phone{
-    color:rgba(43,195,34,1);
-    text-align: center;
-    margin-top: 10px;
-}
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  /* Adjusting for mobile responsiveness */
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  

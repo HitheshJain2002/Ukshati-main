@@ -11,37 +11,34 @@ const Product_home = () => {
   };
 
   return (
-    <div className="py-10 bg-gray-50">
-      <h1 className="text-3xl font-bold text-center mb-10">Our Products</h1>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+    <div className="py-16 bg-gray-50 min-h-screen">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Our Products</h1>
+      
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6">
         {productDetails.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
             onClick={() => handleCardClick(product.id)}
           >
             {/* Image Section */}
-            <div className="w-full h-48 overflow-hidden">
+            <div className="w-full h-56 overflow-hidden rounded-t-2xl">
               <img
                 src={product.img}
                 alt={product.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
+
             {/* Content Section */}
-            <div className="flex flex-col flex-grow">
-              <div className="p-4 flex flex-col justify-between flex-grow">
-                {/* Product Title with Hover Effect */}
-                <h2 className="text-xl font-semibold text-gray-800 group hover:text-green-600 relative">
-                  {product.title}
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></div>
-                </h2>
-                
-                {/* Description with Slate Background */}
-                <div className="mt-2 p-4 bg-slate-100 text-gray-600 text-sm rounded-lg h-full">
-                  <p className="line-clamp-4">{product.description}</p>
-                </div>
-              </div>
+            <div className="p-5 flex flex-col flex-grow">
+              <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                {product.title}
+              </h2>
+              <p className="text-gray-600 text-sm line-clamp-4">
+                {product.description}
+              </p>
+              <div className="mt-3 h-1 w-0 bg-green-500 transition-all duration-300 group-hover:w-full"></div>
             </div>
           </div>
         ))}

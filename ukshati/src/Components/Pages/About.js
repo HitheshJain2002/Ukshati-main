@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../Layouts/Layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../Styles/About.css";
 
 const About = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const About = () => {
   return (
     <Layout>
       {/* Background Section */}
-      <div className="bg-gray-50 py-16">
+      <div className="bg-gray-50 py-16 mt-20 md:mt-24"> {/* Added mt-20/md:mt-24 to push content down */}
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* About Image */}
