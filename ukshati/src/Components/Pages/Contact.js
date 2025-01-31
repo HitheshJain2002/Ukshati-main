@@ -3,11 +3,7 @@ import Layout from "../Layouts/Layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../Styles/Contact.css";
-
-// Replace the img imports with the actual image imports
-import img1 from "../Images/location3.jpg";
-import img2 from "../Images/email2.jpg";
-import img3 from "../Images/Phone.jpg";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa"; // Import icons from react-icons
 
 const Contact = () => {
   useEffect(() => {
@@ -16,7 +12,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-16 pt-[180px]"> {/* Added pt-[80px] to account for fixed navbar */}
+      <div className="container mx-auto px-4 py-16 pt-[180px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Map Section */}
           <div
@@ -37,11 +33,7 @@ const Contact = () => {
           <div className="flex flex-col gap-8" data-aos="fade-left">
             {/* Location Card */}
             <div className="flex items-start gap-4 bg-green-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src={img1}
-                alt="Location"
-                className="w-12 h-12 object-cover rounded-full"
-              />
+              <FaMapMarkerAlt className="w-12 h-12 text-green-600" /> {/* Location Icon */}
               <div>
                 <h5 className="text-xl font-semibold text-green-600">Location</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">
@@ -56,11 +48,7 @@ const Contact = () => {
 
             {/* Email Card */}
             <div className="flex items-start gap-4 bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src={img2}
-                alt="Email"
-                className="w-12 h-12 object-cover rounded-full"
-              />
+              <FaEnvelope className="w-12 h-12 text-blue-600" /> {/* Email Icon */}
               <div>
                 <h5 className="text-xl font-semibold text-blue-600">Email</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">
@@ -71,11 +59,7 @@ const Contact = () => {
 
             {/* Phone Card */}
             <div className="flex items-start gap-4 bg-red-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src={img3}
-                alt="Phone"
-                className="w-12 h-12 object-cover rounded-full"
-              />
+              <FaPhone className="w-12 h-12 text-red-600" /> {/* Phone Icon */}
               <div>
                 <h5 className="text-xl font-semibold text-red-600">Phone</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">

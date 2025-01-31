@@ -1,200 +1,70 @@
-import Layout from '../Layouts/Layout'
-import { useEffect } from 'react';
-import "../Styles/Blog.css"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { MdOutlineKeyboardArrowRight,MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-
-
+import Layout from '../Layouts/Layout';
+import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Blog = () => {
-  useEffect(() => {
-    AOS.init({duration:2000});
-  }, []);
-
   return (
-    <>
-      <Layout>
-        <div className="container">
-          <div className="section-article" data-aos="fade-right">
-          <MdOutlineKeyboardArrowRight className='Article-arrow'/>Article
-          </div>
-          {/* Blog row 1 */}
-          {/* row 1, left card */}
-          <div className="row">
-            <div className="col-md-6">
-              <div className="card" id="card-blog-row-1-1" data-aos="fade-right">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 1" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn" id="article-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* row 1, right card */}
-            <div className="col-md-6">
-              <div className="card" id="card-blog-row-1-2" data-aos="fade-left">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 2" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="article-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Blog row 2 */}
-          {/* row 2, left card */}
-          <div className="row">
-            <div className="col-md-6">
-              <div className="card" id="card-blog-row-2-1" data-aos="fade-right">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 1" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="article-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* row 2, right card */}
-            <div className="col-md-6">
-              <div className="card" id="card-blog-row-2-2" data-aos="fade-left">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 2" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="article-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+    <Layout>
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex items-center gap-2 text-lg font-semibold text-gray-700 mb-6">
+          <MdOutlineKeyboardArrowRight className='text-green-600' />
+          <span>Article</span>
         </div>
 
-
-
-
-
-        {/* Youtube */}
-
-        <div className="container">
-          <div className="section-Youtube" data-aos="fade-right">
-          <MdOutlineKeyboardArrowRight className='Youtube-arrow'/>Youtube
-          </div>
-          {/* youtube row 1 */}
-          {/* row 1, left card */}
-          <div className="row">
-            <div className="col-md-6">
-              <div className="card" id="card-youtube-row-1-1" data-aos="fade-right">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 1" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="youtube-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* row 1, right card */}
-            <div className="col-md-6">
-              <div className="card" id="card-youtube-row-1-2" data-aos="fade-left">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 2" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="youtube-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+            <img 
+              src="https://www.gogreendrip.com/GoGreen/GoGreen/images/adviti1.jpg" 
+              alt="Wifi Drip Controller" 
+              className="w-full md:w-1/3 object-cover h-48 md:h-auto"
+            />
+            <div className="p-5 flex flex-col justify-between">
+              <h5 className="text-xl font-bold text-gray-900">WiFi Drip Controller</h5>
+              <p className="text-gray-600 text-sm my-3">
+                Our project envisions sustainable urban living by enabling families to grow pesticide-free food using biodegradable waste while enhancing city greenery...
+              </p>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" 
+                className="text-green-600 hover:text-green-800 flex items-center gap-1">
+                Read more <MdOutlineKeyboardDoubleArrowRight />
+              </a>
             </div>
           </div>
 
-          {/* youtube row 2 */}
-          {/* row 2, left card */}
-          <div className="row">
-            <div className="col-md-6">
-              <div className="card" id="card-youtube-row-2-1" data-aos="fade-right">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 1" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="youtube-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* row 2, right card */}
-            <div className="col-md-6">
-              <div className="card" id="card-youtube-row-2-2" data-aos="fade-left">
-                <div className="row no-gutters">
-                  <div className="col-md-4">
-                    <img src="https://imgs.search.brave.com/HEnaDi3odrajVBZI4UZYokzPxp2HNLqLIEjd-u-a414/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMjg1NjNi/NGY4MzZjNjY3YjMw/MjM4ODY1Zjc5NmFl/YjAzYWU3MDJkYi0z/NTh4MzU3LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" className="card-img" alt="Image 2" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" className="btn"id="youtube-button">Read more<MdOutlineKeyboardDoubleArrowRight /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+            <img 
+              src="https://www.gogreendrip.com/GoGreen/GoGreen/images/adviti2.jpg" 
+              alt="Terrace or Balcony Garden Benefits" 
+              className="w-full md:w-1/3 object-cover h-48 md:h-auto"
+            />
+            <div className="p-5 flex flex-col justify-between">
+              <h5 className="text-xl font-bold text-gray-900">Terrace or Balcony Garden Benefits</h5>
+              <p className="text-gray-600 text-sm my-3">
+                A terrace or balcony garden offers fresh, organic produce, reduces pollution by increasing oxygen levels, and filters toxic gases...
+              </p>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" 
+                className="text-green-600 hover:text-green-800 flex items-center gap-1">
+                Read more <MdOutlineKeyboardDoubleArrowRight />
+              </a>
             </div>
           </div>
-
         </div>
 
-      </Layout>
-    
-    
-    
-    </>
-  )
-}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Watch Our YouTube Video</h2>
+          <div className="w-full max-w-2xl mx-auto">
+            <iframe 
+              className="w-full aspect-video rounded-lg shadow-lg" 
+              src="https://www.youtube.com/embed/VLSPHFUg3pU?si=szxPQ37LrcsRN2os" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
-export default Blog
+export default Blog;

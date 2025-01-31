@@ -1,38 +1,39 @@
-import React from 'react'
-import { Routes, Route} from 'react-router-dom'
-import Home from './Components/Pages/Home';
-import About from './Components/Pages/About';
-// import Service from './Components/Pages/Service';
-import Products from './Components/Pages/Products';
-import Contact from './Components/Pages/Contact';
-import Blog from './Components/Pages/Blog';
-import Login from './Components/Pages/Login';
-import Uno from './Components/Product_Pages/Uno'
-import Hexa from './Components/Product_Pages/Hexa'
-import Octa from './Components/Product_Pages/Octa'
-import Quadra from './Components/Product_Pages/Quadra';
+import React, { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-//npm start
+// Lazy-loaded components
+const Home = React.lazy(() => import('./Components/Pages/Home'));
+const About = React.lazy(() => import('./Components/Pages/About'));
+const Products = React.lazy(() => import('./Components/Pages/Products'));
+const Contact = React.lazy(() => import('./Components/Pages/Contact'));
+const Blog = React.lazy(() => import('./Components/Pages/Blog'));
+const Login = React.lazy(() => import('./Components/Pages/Login'));
+const Uno = React.lazy(() => import('./Components/Product_Pages/Uno'));
+const Hexa = React.lazy(() => import('./Components/Product_Pages/Hexa'));
+const Octa = React.lazy(() => import('./Components/Product_Pages/Octa'));
+const Quadra = React.lazy(() => import('./Components/Product_Pages/Quadra'));
 
-
+/**
+ * The main app component
+ * @returns {JSX.Element}
+ */
 function App() {
   return (
     <>
-    <Routes>
-      <Route path='/' element = {<Home />} />
-      <Route path='/about' element = {<About />} />
-      {/* <Route path='/service' element = {<Service />} /> */}
-      <Route path='/product' element = {<Products />} />
-      <Route path='/contact' element = {<Contact />} />
-      <Route path='/blog' element = {<Blog />} />
-      <Route path='/login' element = {<Login />} />
-      <Route path='/Uno' element = {<Uno />} />
-      <Route path='/Hexa' element = {<Hexa />} />
-      <Route path='/Octa' element = {<Octa />} />
-      <Route path='/Quadra' element = {<Quadra />} />
-    </Routes>
-    
-    
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/Uno" element={<Uno />} />
+          <Route path="/Hexa" element={<Hexa />} />
+          <Route path="/Octa" element={<Octa />} />
+          <Route path="/Quadra" element={<Quadra />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }
