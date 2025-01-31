@@ -11,18 +11,18 @@ const Product_home = () => {
   };
 
   return (
-    <div className="py-16 bg-gray-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Our Products</h1>
+    <div className="py-10 bg-gray-50 min-h-screen">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Products</h1>
       
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 px-4">
         {productDetails.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+            className="flex flex-col bg-white shadow-md rounded-xl overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300"
             onClick={() => handleCardClick(product.id)}
           >
             {/* Image Section */}
-            <div className="w-full h-56 overflow-hidden rounded-t-2xl">
+            <div className="w-full h-52 overflow-hidden rounded-t-xl">
               <img
                 src={product.img}
                 alt={product.title}
@@ -31,14 +31,17 @@ const Product_home = () => {
             </div>
 
             {/* Content Section */}
-            <div className="p-5 flex flex-col flex-grow">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <div className="p-4 flex flex-col flex-grow">
+              {/* Product Title with Green Hover Line */}
+              <h2 className="text-lg font-semibold text-gray-900 relative group">
                 {product.title}
+                <div className="w-0 h-1 bg-green-500 absolute left-0 bottom-0 transition-all duration-300 group-hover:w-full"></div>
               </h2>
-              <p className="text-gray-600 text-sm line-clamp-4">
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm mt-2">
                 {product.description}
               </p>
-              <div className="mt-3 h-1 w-0 bg-green-500 transition-all duration-300 group-hover:w-full"></div>
             </div>
           </div>
         ))}
