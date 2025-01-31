@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import "../Styles/Navigation.css";
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Products", path: "/product" },
+    { name: "Contact", path: "/contact" },
+    { name: "Blog", path: "/blog" },
+  ];
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-      <nav className="container mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="container mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -16,47 +26,22 @@ const Navigation = () => {
           />
         </div>
 
-        {/* Navigation Links */}
+        {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6">
-          <NavLink
-            to="/"
-            className="text-gray-700 text-lg font-medium hover:text-green-600"
-            activeClassName="text-green-600 border-b-2 border-green-600"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className="text-gray-700 text-lg font-medium hover:text-green-600"
-            activeClassName="text-green-600 border-b-2 border-green-600"
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/product"
-            className="text-gray-700 text-lg font-medium hover:text-green-600"
-            activeClassName="text-green-600 border-b-2 border-green-600"
-          >
-            Products
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="text-gray-700 text-lg font-medium hover:text-green-600"
-            activeClassName="text-green-600 border-b-2 border-green-600"
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            to="/blog"
-            className="text-gray-700 text-lg font-medium hover:text-green-600"
-            activeClassName="text-green-600 border-b-2 border-green-600"
-          >
-            Blog
-          </NavLink>
+          {navLinks.map(({ name, path }) => (
+            <NavLink
+              key={name}
+              to={path}
+              className="text-gray-700 text-lg font-medium hover:text-green-600"
+              activeClassName="text-green-600 border-b-2 border-green-600"
+            >
+              {name}
+            </NavLink>
+          ))}
         </div>
 
         {/* Login Button */}
-        <div className="flex items-center space-x-2">
+        <div className="hidden md:flex items-center space-x-2">
           <NavLink
             to="/login"
             className="flex items-center space-x-1 text-gray-700 text-lg font-medium hover:text-green-600"
@@ -66,11 +51,12 @@ const Navigation = () => {
           </NavLink>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             className="text-gray-700 focus:outline-none"
             aria-label="Toggle navigation"
+            onClick={() => setIsOpen(!isOpen)}
           >
             <svg
               className="w-6 h-6"
@@ -89,6 +75,33 @@ const Navigation = () => {
           </button>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-white shadow-lg">
+          <div className="flex flex-col space-y-4 py-4 px-6">
+            {navLinks.map(({ name, path }) => (
+              <NavLink
+                key={name}
+                to={path}
+                className="text-gray-700 text-lg font-medium hover:text-green-600"
+                activeClassName="text-green-600"
+                onClick={() => setIsOpen(false)}
+              >
+                {name}
+              </NavLink>
+            ))}
+            <NavLink
+              to="/login"
+              className="flex items-center space-x-1 text-gray-700 text-lg font-medium hover:text-green-600"
+              onClick={() => setIsOpen(false)}
+            >
+              <FaUserCircle className="text-2xl" />
+              <span>Login</span>
+            </NavLink>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
